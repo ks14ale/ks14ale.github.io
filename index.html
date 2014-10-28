@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML5 Doodle Jump</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="/assets/js/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+
+      <canvas id="canvas">
+        Aww, your browser doesn't support HTML5!
+      </canvas>
+
+      <div id="mainMenu">
+        <h1>Doodle Jump</h1>
+        <h3>Using HTML5,</h3>
+        <h3>...by <a href="" target="_blank">Alex Ludwick</a></h3>
+  		</a></h3>
+
+        <p class="info">
+          use
+          <span class="key left">←</span>
+          <span class="key right">→</span>
+          to move and space to (re) start...
+        </p>
+        <a class="button" href="javascript:init()">Play</a>
+      </div>
+
+      <div id="gameOverMenu">
+        <h1>game over!</h1>
+        <h3 id="go_score">you scored 0 points</h3>
+
+        <a class="button" href="javascript:reset()">Restart</a>
+        <a id="tweetBtn" target="_blank" class="button tweet" href="#">Tweet score</a>
+
+        <a id="fbBtn" target="_blank" class="button fb" href="#">Post on FB</a>
+      </div>
+
+      <!-- Preloading image ;) -->
+      <img id="sprite" src="https://www.google.com/search?site=imghp&tbm=isch&source=hp&biw=1279&bih=599&q=stewie+griffin&oq=stewie&gs_l=img.3.0.0l10.5218.8585.0.9193.8.6.1.1.1.0.61.329.6.6.0....0...1ac.1.56.img..0.8.334.iKiEE3ouFgU#tbm=isch&q=stewie+griffin+transparent+backround&facrc=_&imgdii=_&imgrc=i6Y4qNou4OiIyM%253A%3BW6yFc_0STzRt-M%3Bhttp%253A%252F%252Falllayedout.com%252FBackgrounds%252FStewie_3.gif%3Bhttp%253A%252F%252Falllayedout.com%252FStewie_Griffin%3B577%3B584"/>
+
+      <div id="scoreBoard">
+        <p id="score">0</p>
+      </div>
+
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
